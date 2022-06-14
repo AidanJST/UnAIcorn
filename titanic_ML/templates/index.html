@@ -13,20 +13,27 @@
     <form action="{% url 'result' %}">
       {% csrf_token %}
       <p>Passenger Class</p>
+      <P>First(1), Second(2), Third(3)</P>
       <input type="text" name='pclass'>
       <p>Sex</p>
+      <p>Male(0), Female(1)</p>
       <input type="text" name='sex'>
       <p>Age</p>
       <input type="text" name='age'>
-      <p>Sibsp</p>
+      <p>Siblings/Spouses</p>
+      <p>Number of siblings or spouses present on the ship</p>
       <input type="text" name='sibsp'>
       <p>Parents/Children</p>
+      <p>Number of parents or childeren present on the ship</p>
       <input type="text" name='parch'>
       <p>Fare</p>
+      <p>The amount of money spent by the passenger (~5-200)</p>
       <input type="text" name='fare'>
       <p>Embarked</p>
+      <p>South Hampton(0), Cherbourg(1), Queenstown(2)</p>
       <input type="text" name='embarked'>
       <p>Title</p>
+      <p>Mr(0), Miss(1), Mrs(2), Master(3), Dr(4), Rev(5), Royalty(6), Officer(7)</p>
       <input type="text" name='title'>
 
       <input type="submit" value="Submit">
