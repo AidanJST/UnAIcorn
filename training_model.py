@@ -60,7 +60,7 @@ randomforest = RandomForestClassifier()
 randomforest.fit(x_train, y_train)
 y_pred = randomforest.predict(x_val)
 
-pickle.dump(randomforest, open('Titanic_model.sav', 'wb'))
+pickle.dump(randomforest, open('titanic_model.sav', 'wb'))
 
 
 # In[15]:
